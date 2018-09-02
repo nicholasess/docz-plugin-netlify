@@ -1,11 +1,11 @@
-let fs = require("fs");
-let { createPlugin } = require("docz-core");
+const fs = require("fs");
+const { createPlugin } = require("docz-core");
 
 module.exports = () =>
   createPlugin({
-    onPostBuild: () => {
-      fs.writeFileSync("./.docz/dist/_redirects", "/*    /index.html   200", {
-        encoding: "utf8"
+    onPostBuild: (dest = '.docz/dist') => {
+      fs.writeFileSync(`./${dest}/_redirects`, '/*    /index.html   200', {
+        encoding: 'utf8'
       });
     }
   });
