@@ -1,6 +1,7 @@
 # docz-plugin-netlify
 
 This package makes it possible to use netlify with docz
+If you provide a different path for the `dist` folder, the plugin will handle it for you.
 
 ## How to use it
 
@@ -11,11 +12,3 @@ export default {
   plugins: [doczPluginNetlify()]
 };
 ```
-
-## Parameters
-
-You can pass, as parameters, the dest folder if it's different from `.docz/dist`.
-
-Example:
-
-`doczPluginNetlify('.docz/build')`

@@ -10,7 +10,7 @@
     "url": "https://github.com/nicholasess"
   },
   "dependencies": {
-    "docz-core": "^0.10.3"
+    "docz-core": "^0.11.2"
   },
   "keywords": [
     "docz-plugin-netlify",
